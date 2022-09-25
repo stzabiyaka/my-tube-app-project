@@ -5,6 +5,7 @@ import { Span } from './Feed.styled';
 import Videos from '../Videos/Videos';
 
 const Feed = () => {
+  const copyrightYear = new Date().getFullYear();
   return (
     <Stack sx={{ flexDirection: { sm: 'column', md: 'row' } }}>
       <Box
@@ -15,8 +16,8 @@ const Feed = () => {
         }}
       >
         <Sidebar />
-        <Typography variant="body2" sx={{ mt: 1.5, color: '#ffffff' }}>
-          Copyright 2022 Stanislav Zabiyaka
+        <Typography variant="body2" sx={{ mt: 1.5, color: 'rgba(255, 255, 255, 0.5)' }}>
+          Copyright {copyrightYear} Stanislav Zabiyaka
         </Typography>
       </Box>
       <Box p={2} sx={{ overflowY: 'auto', height: '90vh', flex: 2 }}>
