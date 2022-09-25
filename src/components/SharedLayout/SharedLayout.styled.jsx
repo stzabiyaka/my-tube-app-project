@@ -19,8 +19,12 @@ export const Link = styled(NavLink)`
   }
 `;
 
-export const Logo = styled.img`
+export const Logo = styled.svg`
   width: 45px;
   height: 45px;
   object-fit: contain;
+
+  fill: #fd1907;
+
+  filter: drop-shadow(1px 2px 3px grey);
 `;
