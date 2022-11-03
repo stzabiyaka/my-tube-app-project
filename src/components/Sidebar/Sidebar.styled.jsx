@@ -23,17 +23,20 @@ export const Button = styled.button`
     margin: 10px;
   }
 
-  &:hover {
-    background-color: #fc1503;
-  }
-
   & span.button__icon {
     margin-right: 15px;
     color: ${({ selected }) => (selected ? '#ffffff' : 'red')};
   }
 
   & span.button__label {
-    margin-right: 15px;
     opacity: ${({ selected }) => (selected ? 1 : 0.8)};
+  }
+
+  &:hover {
+    background-color: #fc1503;
+
+    & span.button__icon {
+      color: #ffffff;
+    }
   }
 `;

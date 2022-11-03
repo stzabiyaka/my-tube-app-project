@@ -26,5 +26,12 @@ export const Logo = styled.svg`
 
   fill: #fd1907;
 
+  transition: transform 0.3s ease;
+
   filter: drop-shadow(1px 2px 3px grey);
+
+  &:hover {
+    transform: scale(1.1);
+    filter: drop-shadow(1px 2px 7px grey);
+  }
 `;
