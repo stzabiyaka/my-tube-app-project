@@ -1,7 +1,6 @@
 import { lazy, Suspense } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import SharedLayout from '../SharedLayout';
-import BackScrollButton from '../BackScrollButton/BackScrollButton';
 import { AppContainer } from './App.styled';
 
 const Feed = lazy(() => import('../Feed'));
@@ -22,7 +21,6 @@ const App = () => {
           </Route>
         </Routes>
       </Suspense>
-      {/* <BackScrollButton /> */}
     </AppContainer>
   );
 };
