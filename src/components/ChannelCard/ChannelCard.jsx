@@ -3,7 +3,7 @@ import { Box, Typography, CardContent, CardMedia } from '@mui/material';
 import { CheckCircle } from '@mui/icons-material';
 import { demoProfilePicture, demoChannelTitle } from '../../utilities/constants';
 
-const ChannelCard = ({ channelDetail, marginTop }) => {
+const ChannelCard = ({ channelDetail, marginTop, noLink }) => {
   return (
     <Box
       sx={{

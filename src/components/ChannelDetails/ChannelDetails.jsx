@@ -13,7 +13,7 @@ const ChannelDetails = () => {
   useEffect(() => {
     apiService
       .fetchVideos(`channels?part=snippet&id=${id}`)
-      .then(data => setChannelDetails(data?.items[0]))
+      .then(data => setChannelDetails({ ...data?.items[0], id: { channelId: id } }))
       .catch(console.log);
 
     apiService
