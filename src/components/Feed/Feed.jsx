@@ -25,8 +25,17 @@ const Feed = () => {
         }}
       >
         <Sidebar selectedCategory={selectedCategory} setSelectedCategory={setSelectedCategory} />
-        <Typography variant="body2" sx={{ mt: 1.5, color: 'rgba(255, 255, 255, 0.5)' }}>
-          Copyright {copyrightYear} Stanislav Zabiyaka
+        <Typography
+          variant="body2"
+          sx={{
+            position: { xs: 'fixed', md: 'static' },
+            bottom: '10px',
+            left: '20px',
+            mt: 1.5,
+            color: 'rgba(255, 255, 255, 0.5)',
+          }}
+        >
+          &copy; Copyright {copyrightYear} Zabiyaka Studio
         </Typography>
       </Box>
       <Box p={2} sx={{ overflowY: 'auto', height: '90vh', flex: 2 }}>

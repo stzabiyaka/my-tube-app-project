@@ -5,7 +5,13 @@ import { Stack, Box } from '@mui/material';
 const Videos = ({ videos, direction = 'row' }) => {
   if (!videos?.length) return 'Loading...';
   return (
-    <Stack direction={direction} flexWrap="wrap" gap={2} sx={{ justifyContent: { xs: 'center' } }}>
+    <Stack
+      direction={direction}
+      flexWrap="wrap"
+      alignItems={direction === 'column' ? 'center' : ''}
+      gap={2}
+      sx={{ justifyContent: { xs: 'center' } }}
+    >
       {videos
         .filter(item => item.id.videoId || item.id.channelId)
         .map((item, indx) => (

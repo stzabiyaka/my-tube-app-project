@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { Box, Typography, CardContent, CardMedia } from '@mui/material';
-import { CheckCircle } from '@mui/icons-material';
+import { CheckCircle, CellTower } from '@mui/icons-material';
 import { demoProfilePicture, demoChannelTitle } from '../../utilities/constants';
 
 const ChannelCard = ({ channelDetail, marginTop, noLink }) => {
@@ -41,6 +41,9 @@ const ChannelCard = ({ channelDetail, marginTop, noLink }) => {
           <Typography variant="h6">
             {channelDetail?.snippet?.title || demoChannelTitle}
             <CheckCircle sx={{ fontSize: 14, color: '#808080', ml: '5px' }} />
+          </Typography>
+          <Typography variant="subtitle1" sx={{ color: '#fc1503' }}>
+            CHANNEL <CellTower sx={{ fontSize: 14, color: '#fc1503', ml: '5px' }} />
           </Typography>
           {channelDetail?.statistics?.subscriberCount && (
             <Typography color="#808080">
